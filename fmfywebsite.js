@@ -1,14 +1,16 @@
 if (Meteor.isClient) {
-  Template.default.rendered = function() {
-     $(document).ready(function(){
-       // cache the window object
+  Template.body.rendered = function() {
+      // cache the window object
        $window = $(window);
-     
+       debugger;
+      console.log("here");
        $('section[data-type="background"]').each(function(){
          // declare the variable to affect the defined data-type
+         debugger;
          var $scroll = $(this);
-                         
+          console.log("scrolly");               
           $(window).scroll(function() {
+            console.log("blergh");
             // HTML5 proves useful for helping with creating JS functions!
             // also, negative value because we're scrolling upwards                             
             var yPos = -($window.scrollTop() / $scroll.data('speed')); 
@@ -20,8 +22,6 @@ if (Meteor.isClient) {
             $scroll.css({ backgroundPosition: coords });    
           }); // end window scroll
        });  // end section function
-    }); // close out script
-
   };
  
   // counter starts at 0

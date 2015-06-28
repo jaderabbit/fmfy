@@ -6,6 +6,19 @@
     align-items: center;
 }
 
+.signin {
+  padding: 5px;
+}
+
+img.hill {
+    height:25%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
 /* general styles */
 html, body {
   height: 100%;
@@ -35,23 +48,44 @@ html, body {
 
 /* additional sections */
 #home {
-  background: url(/img/wallpaper.png) no-repeat center center fixed; 
+  background: url(/img/wallpaper.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
   position: relative;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
-#about {
+.about {
+   background: url(/img/wallpaper.jpg) no-repeat center center fixed; 
+  display: table;
+  position: relative;
+  width: 100%;
+}
+
+.quote {
+  background-color: rgba(1,1,1,0);
+  display: table;
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  color: #3DBEB5;
+}
+
+h2 {
+  color: #80BB7E;
+}
+
+body, html {
+  color: #EC7131;
 }
 
 #services {
-  background-color: #306d9f;
-  color: #ffffff;
 }
 #services .glyphicon {
   border: 2px solid #FFFFFF;
@@ -66,15 +100,15 @@ html, body {
 }
 
 #information {
-  background: url(../images/estate.jpg) no-repeat center center fixed; 
+  background: url(../images/estate.jpg) no-repeat top center fixed; 
   display: table;
   height: 800px;
   position: relative;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 #information .panel {
   opacity: 0.85;
